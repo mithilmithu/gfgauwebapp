@@ -1,3 +1,100 @@
+/*new start*/
+
+body {
+
+      font-family: Arial, sans-serif;
+
+      margin: 20px;
+
+      background-color: #f4f4f9;
+
+    }
+
+    .container {
+
+      max-width: 800px;
+
+      margin: 0 auto;
+
+      background: #fff;
+
+      padding: 20px;
+
+      border-radius: 8px;
+
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+    .hidden {
+
+      display: none;
+
+    }
+
+    .header {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+    }
+
+    .logo {
+
+      height: 60px;
+
+    }
+
+    button {
+
+      background: #2f8d46;
+
+      color: #fff;
+
+      border: none;
+
+      padding: 10px 20px;
+
+      cursor: pointer;
+
+      border-radius: 5px;
+
+    }
+
+    button:hover {
+
+      background: #257038;
+
+    }
+
+    .admin-view {
+
+      background: #f1f1f1;
+
+      padding: 10px;
+
+      border-radius: 5px;
+
+    }
+
+    .admin-view h2 {
+
+      color: #2f8d46;
+
+    }
+
+    .scoreboard {
+
+      margin-top: 10px;
+
+    }
+
+/*new end*/
+
+/*old*/
 /* Common start */
 
 body {
