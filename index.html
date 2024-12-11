@@ -6,8 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database.js"></script>
+
     <!-- SEO and embedding meta tags -->
     <title>GFG Student Chapter | AU</title>
     <meta itemprop="name" content="GFG Student Chapter | AU" />
@@ -39,22 +38,16 @@
     <!-- Primary css and js files -->
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+
     <!-- Preconnect to improve external resources load time -->
  
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <!-- Roboto google font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
 
     <!-- Fontawesome icons -->
     <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    
+
     <!-- Past events carousel -->
     <!-- Past events carousel -->
     <link
@@ -68,17 +61,6 @@
 </head>
 
 <body>
-
-    <div id="navbar"></div>
-<div id="mySidenav"></div>
-<div id="loader_block"></div>
-<iframe id="contact-form"></iframe>
-<input id="username" type="text">
-<form id="user-form"></form>
-<div id="quiz-container"></div>
-<div id="quiz"></div>
-<div id="scoreboard"></div>
-<div id="result"></div>
     <!-- Loading screen -->
     <div id="loader_block">
         <span></span>
@@ -104,8 +86,7 @@
                 <a href="#top-loc">About Us</a>
                 <a href="#events-loc">Events</a>
                 <a href="#team-loc">Team</a>
-                <a href="#social-media-loc">Social Media</a><div id="navbar-wrap"></div>
-
+                <a href="#social-media-loc">Social Media</a>
                
             </div>
         </div>
@@ -121,31 +102,7 @@
             
         </div>
     </nav>
-    
-  <div class="container">
-    <div class="header">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GeeksforGeeks" class="logo">
-      <h1>Anurag University Quiz Platform</h1>
-    </div>
 
-    <div id="user-form">
-      <label for="username">Enter your name:</label>
-      <input type="text" id="username" placeholder="Your name">
-      <button onclick="startQuiz()">Start Quiz</button>
-    </div>
-
-    <div id="quiz-container" class="hidden">
-      <div id="quiz"></div>
-      <button onclick="nextQuestion()">Next</button>
-    </div>
-
-    <div id="result" class="hidden"></div>
-
-    <div class="admin-view">
-      <h2>Admin View: Leaderboard</h2>
-      <div id="scoreboard"></div>
-    </div>
-  </div>
     <!-- Header section -->
     <section id="about-us-loc" class="section-body">
         <div id="header-wrap">
@@ -460,215 +417,4 @@
                     </div>
                     <div class="team-content">
                         <h3 class="name">Brinda Reddy Kuncharam</h3>
-                        <h4 class="title">Organizing Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="./assets/KALYAN CHAKRAVARTHI.png">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Kalyan Chakravarthi</h3>
-                        <h4 class="title">Design Team Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/bandaru-kalyan-chakravarthi-754b78268" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="./assets/DHRUV LUNAWATH.png">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Dhruv Lunawath</h3>
-                        <h4 class="title">Social Media Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/dhruv-lunawath-544211269" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com/Dhruvlunawath" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com/DhruvLunawath" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://instagram.com/dhruv_lunawath?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="./assets/BURRA RAAGA SAMANVITA.png">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Burra Raaga Samanvita</h3>
-                        <h4 class="title">Public Relations Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/raaga-samanvita-483094247" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://instagram.com/raaga_74?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="./assets/CHANDRAGIRI JAYA SHANKAR.png">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Chandragiri Jaya Shankar</h3>
-                        <h4 class="title">Hospitality Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/chandragiri-jaya-shankar-590464269" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com/Jay_14367?t=8KP79ZzV2C5bAhqM98MDyQ&s=08" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://instagram.com/jayashankar_ch?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="./assets/Nukala Divyasree.jpg">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Nukala Divyasree</h3>
-                        <h4 class="title">Content Team Lead</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank" href="https://www.linkedin.com/in/nukala-divya-sree-818260240" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com/Divya-Sree123" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://instagram.com" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Former campus leads section
-    <section class="section-body">
-        <div>
-            <div class="our-team-head" data-aos="fade-down"><span>Chapter</span> Leads</div>
-
-            <div class="team-members" data-aos="fade-up">
-                <div class="our-team">
-                    <div class="picture">
-                        <img class="img-fluid" src="chaiperson.png">
-                    </div>
-                    <div class="team-content">
-                        <h3 class="name">Varun Talluri</h3>
-                        <h4 class="title">Chairperson (2023)</h4>
-                    </div>
-                    <ul class="social">
-                        <li><a target="_blank"   href="https://www.linkedin.com/in/talluri-varun-baaa0b236" class="fa fa-linkedin"
-                                aria-hidden="true"></a></li>
-                        <li><a target="_blank" href="https://github.com/Varun-Talluri" class="fa fa-github" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://twitter.com/TALLURI__VARUN?t=T-q56355pofjQb19gUfh9g&s=09" class="fa fa-twitter" aria-hidden="true"></a>
-                        </li>
-                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
-                                aria-hidden="true"></a></li>
-                    </ul>
-                </div>
-
-
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Social media section -->
-    <section id="social-media-loc" class="socials-body">
-        <div id="socials-wrap">
-            <div id="socials-img" data-aos="flip-up">
-                <img data-src="./assets/social-media-shadow.webp">
-            </div>
-            <div class="social-item-wrap">
-                <div data-aos="zoom-in-down">
-                    <a target="_blank" href="https://instagram.com/geeksforgeeks_ausc?igshid=MzRlODBiNWFlZA==">
-                        <div class="social-item"><i
-                                class="fa-fw fa-brands fa-instagram fa-2x"></i><span>Instagram</span>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://chat.whatsapp.com/GGjbWe8br3q2OfKWObgxoO">
-                        <div class="social-item"><i class="fa-fw fa-brands fa-whatsapp fa-2x"></i><span>Whatsapp</span>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://twitter.com/Gfg_ausc">
-                        <div class="social-item"><i class="fa-fw fa-brands fa-twitter fa-2x"></i><span>Twitter</span>
-                        </div>
-                    </a>
-                </div>
-                <div data-aos="zoom-in-up">
-                    <a target="_blank" href="https://www.linkedin.com/company/geeksforgeeks-ausc/">
-                        <div class="social-item"><i
-                                class="fa-fw fa-brands fa-linkedin-in fa-2x"></i><span>LinkedIn</span>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://www.youtube.com">
-                        <div class="social-item"><i class="fa-fw fa-brands fa-youtube fa-2x"></i><span>YouTube</span>
-                        </div>
-                    </a>
-                    <a target="_blank" href="https://linktr.ee">
-                        <div class="social-item"><i class="fa-fw fa-solid fa-tree fa-2x"></i><span>LinkTree</span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Contact us section -->
- 
-       
-    
-
-
-    <!-- Footer section -->
-    <section class="footer-body">
-        <div>Made with <i class="fa-solid fa-fire fa-beat" style="--fa-animation-duration: 2s;"></i> by</div>
-        <div>GeeksforGeeks Student Chapter AU</div>
-
-    </section>
-    <script type="module" src="index.js"></script>
-<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js"></script>
-
-    <!-- Swiper Library -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Your Custom Script -->
-    <script src="index.js"></script>
-
-
-</body>
-
-
-</html>
+                        <h4 class="ti
