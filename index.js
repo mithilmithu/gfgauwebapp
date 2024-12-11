@@ -98,23 +98,22 @@ window.addEventListener('load', pageLoaded);
 // Loading screen end
 
 
-
 // Initialize Firebase
-
-// Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAC4mLD6HkjElgJrMdelrgESJvAJDdnl9g",
-  authDomain: "quiz-2a43b.firebaseapp.com",
-  databaseURL: "https://quiz-2a43b-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "quiz-2a43b",
-  storageBucket: "quiz-2a43b.firebasestorage.app",
-  messagingSenderId: "411100906430",
-  appId: "1:411100906430:web:75e29afc332b90c7feafef",
-  measurementId: "G-BXF22YNG6C",
+    apiKey: "AIzaSyAC4mLD6HkjElgJrMdelrgESJvAJDdnl9g",
+    authDomain: "quiz-2a43b.firebaseapp.com",
+    databaseURL: "https://quiz-2a43b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "quiz-2a43b",
+    storageBucket: "quiz-2a43b.firebasestorage.app",
+    messagingSenderId: "411100906430",
+    appId: "1:411100906430:web:75e29afc332b90c7feafef",
+    measurementId: "G-BXF22YNG6C",
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+// Your remaining code...
 
 const questionSets = {
   set1: [
