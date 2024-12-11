@@ -99,8 +99,7 @@ window.addEventListener('load', pageLoaded);
 
 
 
-import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-import { getDatabase, ref, set, push, onValue } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+// Initialize Firebase
 
 // Firebase configuration
 const firebaseConfig = {
