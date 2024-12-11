@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO and embedding meta tags -->
+    <title>GFG Student Chapter | AU</title>
+    <meta itemprop="name" content="GFG Student Chapter | AU" />
+    <meta property="og:title" content="GFG Student Chapter | AU" />
+    <meta name="twitter:title" content="GFG Student Chapter | AU">
+
+    <meta name="theme-color" content="#007C1C">
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="icon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+
+    <meta itemprop="image" content="https://gfg-AU.github.io/assets/embed.png" />
+    <meta name="twitter:image" content="https://gfg-AU.github.io/assets/embed.png" />
+    <meta name="twitter:image:src" content="https://gfg-AU.github.io/assets/embed.png">
+    <meta property="og:image" content="https://gfg-AU.github.io/assets/embed.png">
+
+    <meta itemprop="description"
+        content="GeeksforGeeks Student Chapter of Anurag University. A budding community where developers, designers, machine learning enthusiasts, technical content writers come under one roof to learn and grow together." />
+    <meta property="og:description"
+        content="GeeksforGeeks Student Chapter of Anurag University. A budding community where developers, designers, machine learning enthusiasts, technical content writers come under one roof to learn and grow together." />
+    <meta name="twitter:description"
+        content="GeeksforGeeks Student Chapter of Anurag University. A budding community where developers, designers, machine learning enthusiasts, technical content writers come under one roof to learn and grow together." />
+    <meta name="description"
+        content="GeeksforGeeks Student Chapter of Anurag University. A budding community where developers, designers, machine learning enthusiasts, technical content writers come under one roof to learn and grow together.">
+
+    <!-- Primary css and js files -->
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+
+    <!-- Preconnect to improve external resources load time -->
+ 
+
+    <!-- Roboto google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome icons -->
+    <script src="https://kit.fontawesome.com/20aa92e9f6.js" crossorigin="anonymous"></script>
+
+    <!-- Past events carousel -->
+    <!-- Past events carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Animate on scroll -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/aos@next/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- Loading screen -->
+    <div id="loader_block">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Top of the page -->
+    <div id="top-loc"></div>
+
+    <!-- Menu bar -->
+    <nav id="navbar-wrap">
+        <!-- Desktop Menu -->
+        <div id="navbar">
+            <div data-aos="fade-down" id="logo" class="reverse">
+                <div class="mobile-btn" style="font-size:30px;cursor:pointer; font-weight:bold;" onclick="openNav()">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+                <div class="logo"><img src="./assets/logo-small.png">
+                </div>
+            </div>
+            <div id="links" data-aos="fade-down">
+                <a href="#top-loc">About Us</a>
+                <a href="#events-loc">Events</a>
+                <a href="#team-loc">Team</a>
+                <a href="#social-media-loc">Social Media</a>
+               
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu -->
+        <div id="mySidenav" class="sidenav">
+            <a style="cursor:pointer;" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#top-loc">About Us</a>
+            <a href="#events-loc">Events</a>
+            <a href="#team-loc">Team</a>
+            <a href="#social-media-loc">Social Media</a>
+            
+        </div>
+    </nav>
+    
+  <div class="container">
+    <div class="header">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GeeksforGeeks" class="logo">
+      <h1>Anurag University Quiz Platform</h1>
+    </div>
+
+    <div id="user-form">
+      <label for="username">Enter your name:</label>
+      <input type="text" id="username" placeholder="Your name">
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <div id="quiz"></div>
+      <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+
+    <div class="admin-view">
+      <h2>Admin View: Leaderboard</h2>
+      <div id="scoreboard"></div>
+    </div>
+  </div>
+    <!-- Header section -->
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+                <div id="bonjour">Hii, GEEKS!!</div>
+                <div id="welcome">Welcome to <span id="geeksforgeeks">GeeksforGeeks</span> Student Chapter
+                    of Anurag University
+                </div>
+                <div id="description">Geeks for Geeks is a renowned online platform that provides valuable
+                    resources, tutorials, and coding challenges for computer science and
+                    engineering students. It has emerged as a comprehensive knowledge
+                    hub and a reliable source of information for programming enthusiasts
+                    worldwide. The establishment of a Geeks for Geeks Student Chapter at
+                    Anurag University would offer our students a unique opportunity to
+                    engage in collaborative learning, share knowledge, and enhance their
+                    programming skills.
+                    At GFG Student Chapter Anurag Uniersity, we believe in community driven efforts.
+                    It is a
+                    place where
+                    developers,
+                    designers, machine learning enthusiasts, technical content writers come under one roof to learn and
+                    grow
+                    together by reaching out to the community.</div>
+            </div>
+            <div id="header-img" data-aos="fade-up">
+                <img src="./assets/new-logo.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+
+                <div id="header-img" data-aos="fade-up">
+                    <img src="./assets/vission.png" alt="">
+                </div>
+            </div>
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+
+                <div id="welcome"><span id="geeksforgeeks">Vision </span></div>
+
+                <div id="description">“The Geeks for Geeks Student Chapter at Anurag University envisions a
+                    vision to create a vibrant community of passionate programmers and
+                    problem solvers who are equipped with the necessary skills to excel in the
+                    ever-evolving field of computer science and engineering. We aim to foster a
+                    culture of continuous learning and inspire innovation among our members
+                    to explore new ways of critical and logical thinking.”
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+                <div id="welcome"><span id="geeksforgeeks">Mission </span></div>
+
+                <div id="description">“The Geeks for Geeks Student Chapter at Anurag University envisions its
+                    mission to provide a conducive environment for students to enhance their
+                    programming abilities, promote teamwork, and encourage the application of
+                    theoretical knowledge to practical problem-solving. We strive to organize
+                    regular events, workshops, tutorials, webinars by industry experts and
+                    competitions that nurture creativity, critical thinking, and technical
+                    excellence.”</div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div id="header-img" data-aos="fade-up">
+                <img src="./assets/missssion.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+
+                <div id="header-img" data-aos="fade-up">
+                    <img src="./assets/objectives.png" alt="">
+                </div>
+            </div>
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+
+                <div id="welcome"><span id="geeksforgeeks">Objectives </span></span></div>
+
+
+                <div id="description"> <span id="geeksforgeeks"> 1. Knowledge Sharing:</span> The chapter will organize
+                    regular workshops,
+                    seminars, and coding competitions to facilitate the exchange of knowledge
+                    and foster a culture of learning among students.
+                    <br>
+                    <span id="geeksforgeeks">2. Skill Development: </span> The chapter will provide a platform for
+                    students to
+                    enhance their programming skills through coding challenges, hackathons,
+                    and practice sessions. <br>
+                    <span id="geeksforgeeks">3. Industry Interaction: </span> The chapter will invite industry experts
+                    and
+                    professionals to deliver talks, mentorship sessions, and share insights into”
+                </div>
+
+           
+
+
+            </div>
+        </div>
+    </section>
+    </section>
+    <section id="about-us-loc" class="section-body">
+        <div id="header-wrap">
+            <div id="header-text" data-aos="fade-up" data-aos-delay="300">
+                <div id="welcome"><span id="geeksforgeeks">Advantages </span>to join</div>
+
+                <div id="description"><span id="geeksforgeeks">&hearts; </span>Get an <span
+                        id="geeksforgeeks">internship </span> at GeeksforGeeks.
+                    <br><span id="geeksforgeeks">&hearts; Learn to build </span> effective and optimized solutions for
+                    local businesses
+                    and their <br>community as per the latest technology trends. <br><span id="geeksforgeeks">&hearts; </span>Great <span id="geeksforgeeks">learning
+                    </span> and <span
+                        id="geeksforgeeks">networking</span>
+                    experience
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+            </div>
+            <div id="header-img" data-aos="fade-up">
+                <img src="./assets/advantagess.png" alt="">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="events-loc" class="swiper-body">
+        <div data-aos="flip-up">
+          <img
+            id="events-head-img"
+            src="https://cdn.jsdelivr.net/gh/GfG-IIIT-Bh/GfG-IIIT-Bh.github.io/assets/past-events.webp"
+          />
+        </div>
+        <div class="swiper mySwiper" data-aos="fade-up">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./assets/posters/1.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/posters/2.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/posters/3.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/posters/4.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/posters/5.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="./assets/posters/6.png" alt="">            
+            </div>
+            <!-- <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div>
+            <div class="swiper-slide">
+                <img src="eveentt.png" alt="">            
+            </div> -->
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+    <!-- Our core team section -->
+    <section id="team-loc" class="section-body">
+        <div>
+            <div class="our-team-head" data-aos="fade-down"><span>Our</span> Core Team</div>
+
+            <div class="team-members" data-aos="fade-up">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/chaiperson.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Varun Talluri</h3>
+                        <h4 class="title">Chairperson (2023)</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/talluri-varun-baaa0b236"
+                                class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Varun-Talluri" class="fa fa-github"
+                                aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/TALLURI__VARUN?t=T-q56355pofjQb19gUfh9g&s=09"
+                                class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/vicechaiperson.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Sriraj Nihar</h3>
+                        <h4 class="title">Vice Chairperson</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/sriraj-nihar" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Nxhar" class="fa fa-github"
+                                aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/sriraj_nihar_s" class="fa fa-twitter"
+                                aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com/s._.nihar._.s?igshid=MzRlODBiNWFlZA=="
+                                class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/secretary.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Yerram Vikanth</h3>
+                        <h4 class="title">Secretary</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/vikanth-yerram-0435a7269"
+                                class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Vikanth7" class="fa fa-github"
+                                aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/Vikanth7?t=wMBiqUVkrasKx72TsNnhbA&s=09"
+                                class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" target="_blank"
+                                href="https://instagram.com/vikanth7?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                                class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/DEVATHA JAYANTH MACHINENI.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Devatha Jayanth Machineni</h3>
+                        <h4 class="title">Treasurer</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/devatha-jayanth-machineni-9038b7243"
+                                class="fa fa-linkedin" aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank"
+                                href="https://instagram.com/__jayanthchowdary__?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"
+                                class="fa fa-instagram" aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/teachnicalteamlead.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Puligilla Sai Nithin</h3>
+                        <h4 class="title">Technical Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/sai-puligilla-a6ba5422a" class="fa fa-linkedin"
+                                aria-hidden="true"></a></litarget="_blank">
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/SaiPuligilla1?t=k7M__Luezt90ZNhXJA2_RA&s=08" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com/sainithin_08?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/Brinda Reddy Kuncharam.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Brinda Reddy Kuncharam</h3>
+                        <h4 class="title">Organizing Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/KALYAN CHAKRAVARTHI.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Kalyan Chakravarthi</h3>
+                        <h4 class="title">Design Team Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/bandaru-kalyan-chakravarthi-754b78268" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/DHRUV LUNAWATH.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Dhruv Lunawath</h3>
+                        <h4 class="title">Social Media Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/dhruv-lunawath-544211269" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Dhruvlunawath" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/DhruvLunawath" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com/dhruv_lunawath?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/BURRA RAAGA SAMANVITA.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Burra Raaga Samanvita</h3>
+                        <h4 class="title">Public Relations Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/raaga-samanvita-483094247" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com/raaga_74?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/CHANDRAGIRI JAYA SHANKAR.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Chandragiri Jaya Shankar</h3>
+                        <h4 class="title">Hospitality Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/chandragiri-jaya-shankar-590464269" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/Jay_14367?t=8KP79ZzV2C5bAhqM98MDyQ&s=08" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com/jayashankar_ch?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="./assets/Nukala Divyasree.jpg">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Nukala Divyasree</h3>
+                        <h4 class="title">Content Team Lead</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank" href="https://www.linkedin.com/in/nukala-divya-sree-818260240" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Divya-Sree123" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://instagram.com" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Former campus leads section
+    <section class="section-body">
+        <div>
+            <div class="our-team-head" data-aos="fade-down"><span>Chapter</span> Leads</div>
+
+            <div class="team-members" data-aos="fade-up">
+                <div class="our-team">
+                    <div class="picture">
+                        <img class="img-fluid" src="chaiperson.png">
+                    </div>
+                    <div class="team-content">
+                        <h3 class="name">Varun Talluri</h3>
+                        <h4 class="title">Chairperson (2023)</h4>
+                    </div>
+                    <ul class="social">
+                        <li><a target="_blank"   href="https://www.linkedin.com/in/talluri-varun-baaa0b236" class="fa fa-linkedin"
+                                aria-hidden="true"></a></li>
+                        <li><a target="_blank" href="https://github.com/Varun-Talluri" class="fa fa-github" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://twitter.com/TALLURI__VARUN?t=T-q56355pofjQb19gUfh9g&s=09" class="fa fa-twitter" aria-hidden="true"></a>
+                        </li>
+                        <li><a target="_blank" href="https://www.instagram.com" class="fa fa-instagram"
+                                aria-hidden="true"></a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Social media section -->
+    <section id="social-media-loc" class="socials-body">
+        <div id="socials-wrap">
+            <div id="socials-img" data-aos="flip-up">
+                <img data-src="./assets/social-media-shadow.webp">
+            </div>
+            <div class="social-item-wrap">
+                <div data-aos="zoom-in-down">
+                    <a target="_blank" href="https://instagram.com/geeksforgeeks_ausc?igshid=MzRlODBiNWFlZA==">
+                        <div class="social-item"><i
+                                class="fa-fw fa-brands fa-instagram fa-2x"></i><span>Instagram</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://chat.whatsapp.com/GGjbWe8br3q2OfKWObgxoO">
+                        <div class="social-item"><i class="fa-fw fa-brands fa-whatsapp fa-2x"></i><span>Whatsapp</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://twitter.com/Gfg_ausc">
+                        <div class="social-item"><i class="fa-fw fa-brands fa-twitter fa-2x"></i><span>Twitter</span>
+                        </div>
+                    </a>
+                </div>
+                <div data-aos="zoom-in-up">
+                    <a target="_blank" href="https://www.linkedin.com/company/geeksforgeeks-ausc/">
+                        <div class="social-item"><i
+                                class="fa-fw fa-brands fa-linkedin-in fa-2x"></i><span>LinkedIn</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.youtube.com">
+                        <div class="social-item"><i class="fa-fw fa-brands fa-youtube fa-2x"></i><span>YouTube</span>
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://linktr.ee">
+                        <div class="social-item"><i class="fa-fw fa-solid fa-tree fa-2x"></i><span>LinkTree</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact us section -->
+ 
+       
+    
+
+
+    <!-- Footer section -->
+    <section class="footer-body">
+        <div>Made with <i class="fa-solid fa-fire fa-beat" style="--fa-animation-duration: 2s;"></i> by</div>
+        <div>GeeksforGeeks Student Chapter AU</div>
+
+    </section>
+</body>
+
+
+</html>
